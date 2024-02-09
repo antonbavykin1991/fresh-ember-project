@@ -1,0 +1,90 @@
+{
+  "i18n-ally.enabledParsers": [
+    "json",
+    "js"
+  ],
+  "i18n-ally.extract.ignoredByFiles": {},
+  "i18n-ally.extract.keyMaxLength": 100,
+  "i18n-ally.localesPaths": [
+    "src/locales",
+    "public/translations"
+  ],
+  "prettier.singleQuote": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "prettier.bracketSameLine": true,
+  "tailwindCSS.emmetCompletions": true,
+  "auto-close-tag.activationOnLanguage": [
+    "gts",
+    "gjs",
+    "glimmer-ts",
+    "glimmer-js",
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "typescript",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[glimmer-js]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "[glimmer-ts]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "eslint.probe": [
+    "glimmer-js",
+    "glimmer-ts"
+  ],
+  "eslint.validate": [
+    "glimmer-ts",
+    "glimmer-js"
+  ],
+  "editor.formatOnSave": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "npm-intellisense.showBuildInLibs": true,
+  "prettier.documentSelectors": [
+    "**/*.gjs",
+    "**/*.gts"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

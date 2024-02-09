@@ -26,6 +26,34 @@ module.exports = {
       ],
       rules: {},
     },
+    {
+      files: ['**/*.gts'],
+      parser: 'ember-eslint-parser',
+      plugins: ['ember'],
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:ember/recommended',
+        'plugin:ember/recommended-gts',
+      ],
+    },
+    {
+      files: ['**/*.gjs'],
+      parser: 'ember-eslint-parser',
+      plugins: ['ember'],
+      extends: [
+        'eslint:recommended',
+        'plugin:ember/recommended',
+        'plugin:ember/recommended-gjs',
+      ],
+    },
+    {
+      files: ['tests/**/*.{js,ts,gjs,gts}'],
+      rules: {
+        // override / enable optional rules
+        'ember/no-replace-test-comments': 'error',
+      },
+    },
     // node files
     {
       files: [

@@ -1,7 +1,9 @@
-// Types for compiled templates
-declare module 'my-app/templates/*' {
-  import { TemplateFactory } from 'ember-cli-htmlbars';
+import '@glint/environment-ember-loose';
+import { ComponentLike } from '@glint/template';
+import type EmberPageTitleTemplateRegistry from 'ember-page-title/template-registry';
 
-  const tmpl: TemplateFactory;
-  export default tmpl;
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry extends EmberPageTitleTemplateRegistry {
+    WelcomePage: ComponentLike;
+  }
 }
